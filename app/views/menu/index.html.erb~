@@ -1,0 +1,28 @@
+<h1>Listing cards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Card</th>
+      <th>Name</th>
+      <th>Text</th>
+      <th>Cost</th>
+      <th>Type1</th>
+      <th>Type2</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= link_to 'manual', manual %></td>
+        <td><%#= link_to 'Edit', edit_card_path(card) %></td>
+      </tr>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Card', new_card_path %>
