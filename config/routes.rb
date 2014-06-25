@@ -1,5 +1,9 @@
 Dominion::Application.routes.draw do
+  root 'menu#index'
   resources :cards
+  resources :menu do
+  get :manual, :on => :collection
+  end
 
   get ':controller/:action'
   put ':controller/:action'
