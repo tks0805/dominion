@@ -1,6 +1,9 @@
 Dominion::Application.routes.draw do
   resources :cards
 
+  get ':controller/:action'
+  put ':controller/:action'
+  #get 'select', to: 'select#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

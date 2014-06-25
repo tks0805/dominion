@@ -1,0 +1,24 @@
+<JavaScript>
+<script type="text/javascript">
+  function bt(btnNo){
+    document.form.action=btnNo;
+    document.form.submit();
+  }
+</script>
+<h1>select</h1>
+
+<%= form_tag('', :method => :put, :id => "form", :name => "form") do |f| %>
+
+  <% @cards.each do |card| %>
+     <%= check_box_tag 'selected[]', card.id, false, {} %>　<%= card.name %>
+    <br>
+  <% end %>
+
+  <br>
+  <%= text_field_tag 'list_name' %>
+  <%= submit_tag "Save",    :onclick => "bt('create');" %>
+  <%= submit_tag "Start",   :onclick => "bt('../play');" %>
+  <%= submit_tag "Cancel",  :onclick => "bt('../config');" %>
+  <%= link_to 'Start', :controller => "play", :action => "index" %>  
+  <%= link_to 'Cancel', :controller => "config", :action => "index" %>
+<% end %>
