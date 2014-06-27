@@ -5,18 +5,16 @@
     document.form.submit();
   }
 </script>
-<h1>select</h1>
+<h1>config</h1>
 
 <%= form_tag('', :method => :put, :id => "form", :name => "form") do |f| %>
-
-  <% @cards.each do |card| %>
-     <%= check_box_tag 'selected[]', card.id, false, {} %>　<%= card.name %>
-    <br>
-  <% end %>
+ <%= radio_button 'number', 'number', '1', {:checked => true} %>　マルチプレイ <%= radio_button 'page', 'category', 'ruby_base', {} %>
 
   <br>
   <%= text_field_tag 'list_name' %>
   <%= submit_tag "Save",    :onclick => "bt('create');" %>
   <%= submit_tag "Start",   :onclick => "bt('../play');" %>
   <%= submit_tag "Cancel",  :onclick => "bt('../config');" %>
+  <%= link_to 'Start', :controller => "play", :action => "index" %>  
+  <%= link_to 'Cancel', :controller => "config", :action => "index" %>
 <% end %>
