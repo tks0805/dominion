@@ -1,9 +1,10 @@
-class SelectController < ApplicationController
+﻿class SelectController < ApplicationController
   def index
   end
   
   def new
-    @cards = Card.where('card_id=?', "1")
+    @cards = Card.where('type1=? or type2=?', "1", "1")
+                 .order('id')
   end
 
   def create
