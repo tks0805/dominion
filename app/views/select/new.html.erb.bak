@@ -12,20 +12,17 @@
 
 <%= form_tag('', :method => :put, :id => "form", :name => "form") do |f| %>
 
-  <% i = 0;%>
   <% @cards.each do |card| %>
-    <%= check_box_tag 'selected[]', card.id, false, {} %>
-   <span><%= string_length_format(card.name) %></span>
-    <p class="arrow_box" id="arrow_box">
-     《<%= card.name %>》
-     コスト：<%= card.cost %><br>
-     『<%= card.text %>』<br>
-      <%= image_tag card.image_name %>
-　　</p>
-    <% i+=1 %>
-    <% if i%5 == 0 %>
-      <br>
-    <% end %>
+
+    <div class="out" id="out">
+      <div class="in" id="in">
+        <%= check_box_tag 'selected[]', card.id, false, {} %>
+   　   <span><%= card.name %></span>
+        <p class="arrow_box" id="arrow_box">コスト：<%= card.cost %><br>
+　　　　　　<%= card.text %>
+　　　　</p>
+      </div>
+    </div>
   <% end %>
 
   <br>
@@ -33,5 +30,4 @@
   <%= submit_tag "Save",    :onclick => "bt('create');" %>
   <%= submit_tag "Start",   :onclick => "bt('../play');" %>
   <%= submit_tag "Cancel",  :onclick => "bt('../config');" %>
-
 <% end %>

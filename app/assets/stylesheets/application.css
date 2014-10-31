@@ -11,3 +11,20 @@
  *= require_self
  *= require_tree .
  */
+#out div {
+  position: relative;
+}
+
+.arrow_box {
+  display: none;
+  position: absolute;
+  top: 255px;          /* 上から30px */ 
+  left: 0px;        /* 左から200px */ 
+  width:665px;
+  padding: 16px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;  
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+}
