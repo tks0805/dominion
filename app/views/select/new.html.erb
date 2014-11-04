@@ -1,10 +1,12 @@
-<JavaScript>
+﻿<JavaScript>
 <script type="text/javascript">
   function bt(btnNo){
     document.form.action=btnNo;
     document.form.submit();
   }
 </script>
+<%= flash.notice %>
+<%= flash.alert %>
 <h1>select</h1>
 
 <%= form_tag('', :method => :put, :id => "form", :name => "form") do |f| %>
@@ -17,6 +19,6 @@
   <br>
   <%= text_field_tag 'list_name' %>
   <%= submit_tag "Save",    :onclick => "bt('create');" %>
-  <%= submit_tag "Start",   :onclick => "bt('../play');" %>
-  <%= submit_tag "Cancel",  :onclick => "bt('../config');" %>
+  <%= submit_tag "Start",   :onclick => "bt('../play/index');" %>
+  <%= submit_tag "Cancel",  :onclick => "bt('../config/index');" %>
 <% end %>

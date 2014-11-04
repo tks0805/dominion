@@ -1,4 +1,4 @@
-Dominion::Application.routes.draw do
+﻿Dominion::Application.routes.draw do
   resources :cards
 
   get ':controller/:action'
@@ -8,7 +8,7 @@ Dominion::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'menu#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

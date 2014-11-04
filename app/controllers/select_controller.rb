@@ -1,4 +1,5 @@
-﻿class SelectController < ApplicationController
+﻿
+class SelectController < ApplicationController
   def index
   end
   
@@ -21,13 +22,15 @@
       list.card8  = params[:selected][7]
       list.card9  = params[:selected][8]
       list.card10 = params[:selected][9]
-      list.save
+      list.save!
+      message = "Success."
     else
-      
+      message = "Failed."
     end
     redirect_to :action=> 'new'
-    
+    flash.notice = message
     rescue
-      redirect_to :action=> 'new'    
+      redirect_to :action=> 'new'
+      flash.alert = 'Failed.'
   end
 end

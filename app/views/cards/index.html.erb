@@ -1,4 +1,4 @@
-<h1>Listing cards</h1>
+﻿<h1>Listing cards</h1>
 
 <table>
   <thead>
@@ -20,7 +20,7 @@
       <tr>
         <td><%= card.card_id %></td>
         <td><%= card.name %></td>
-        <td><%= card.text %></td>
+        <td><%= simple_format(card.text) %></td>
         <td><%= card.cost %></td>
         <td><%= card.type1 %></td>
         <td><%= card.type2 %></td>
