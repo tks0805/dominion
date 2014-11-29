@@ -3,6 +3,8 @@ Dominion::Application.routes.draw do
   resources :cards
   resources :menu
 
+  get 'stream' => 'index#stream'
+
   get ':controller/:action'
   put ':controller/:action'
   #get 'select', to: 'select#index'
