@@ -1,4 +1,4 @@
-<JavaScript>
+﻿<JavaScript>
 <script type="text/javascript">
   function bt(btnNo){
     document.form.action=btnNo;
@@ -8,13 +8,10 @@
 <h1>config</h1>
 
 <%= form_tag('', :method => :put, :id => "form", :name => "form") do |f| %>
- <%= radio_button 'number', 'number', '1', {:checked => true} %>　マルチプレイ <%= radio_button 'page', 'category', 'ruby_base', {} %>
-
+  プレイ人数：　<%= select :menber, :number, [["2", 2], ["3", 3], ["4", 4]] %><br>
+  王国カード：　<%= select :list, :name, @lists.map{|l| [l.name, l.id]} %><br>
+  <%= link_to '自分で選択する', :controller => "select", :action => "new" %><br>
   <br>
-  <%= text_field_tag 'list_name' %>
-  <%= submit_tag "Save",    :onclick => "bt('create');" %>
-  <%= submit_tag "Start",   :onclick => "bt('../play');" %>
-  <%= submit_tag "Cancel",  :onclick => "bt('../config');" %>
-  <%= link_to 'Start', :controller => "play", :action => "index" %>  
-  <%= link_to 'Cancel', :controller => "config", :action => "index" %>
+  <br>
+  <%= submit_tag "Start",   :onclick => "bt('../play/index');" %>
 <% end %>
