@@ -1,457 +1,726 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-1:
-  card_id: st01
-  name: 地下貯蔵庫
-  text: ＋１アクション/n手札から好きな枚数のカードを捨て札にする。/n捨て札１枚につき、カードを１枚引く。
-  cost: 2
-  type1: 1
-  type2: 
-
-2:
-  card_id: st02 
-  name: 礼拝堂 
-  text: あなたの手札から最大４枚までのカードを、廃棄する。/n
-  cost: 2 
-  type1: 1
-  type2:
-
-3:
-  card_id: st03
-  name: 堀 
-  text: ＋２カードを引く/n他のプレイヤーがアタックカードを使用した時、手札からこのカードを公開できる。/nそうした場合、あなたはそのアタックカードの影響を受けない。
-  cost: 2
-  type1: 1
-  type2:
-
-4:
-  card_id: st04 
-  name: 宰相
-  text: ＋２コイン/nあなたの山札のカードすべてを、即座に捨て札に置くことができる。
-  cost: 3 
-  type1: 1
-  type2:
-
-5:
-  card_id: st05 
-  name: 村
-  text: ＋１カードを引く/n＋２アクション
-  cost: 3 
-  type1: 1
-  type2:
-
-6:
-  card_id: st06
-  name: 木こり
-  text: ＋１カードを購入/n＋２コイン
-  cost: 3 
-  type1: 1
-  type2:
-
-7:
-  card_id: st07
-  name: 工房
-  text: コスト最大４コインまでのカード１枚を獲得する。
-  cost: 3 
-  type1: 1 
-  type2:
-
-8:
-  card_id: st08
-  name: 役人
-  text: 銀貨１枚を獲得し、あなたの山札の上に置く。/n他のプレイヤーは全員、自分の手札から勝利点カード１枚を公開し、自分の山札の上に置く。/n（手札に勝利点カードがない場合、手札を公開する。）
-  cost: 4 
-  type1: 1 
-  type2:
-
-9:
-  card_id: st09
-  name: 祝宴
-  text: このカードを廃棄する。/nコスト５コイン以下のカード１枚を獲得する。
-  cost: 4 
-  type1: 1
-  type2:
-
-10:
-  card_id: st10
-  name: 庭園
-  text: あなたの山札のカード１０枚（端数切り捨て）につき勝利点１を得る。
-  cost: 4 
-  type1: 3 
-  type2:
-
-11:
-  card_id: st11
-  name: 民兵 
-  text: ＋２コイン/n他のプレイヤーは全員、自分の手札が３枚になるまで捨て札をする。
-  cost: 4 
-  type1: 1
-  type2:
-
-12:
-  card_id: st12
-  name: 金貸し 
-  text: あなたの手札から銅貨１枚を廃棄する。/nそうした場合、＋３コインを使用できる。
-  cost: 4 
-  type1: 1
-  type2:
-
-13:
-  card_id: st13
-  name: 改築 
-  text: あなたの手札のカード１枚を廃棄する。/n廃棄したカードよりコストが最大２コイン多いカード１枚を獲得する。
-  cost: 4 
-  type1: 1 
-  type2:
-
-14:
-  card_id: st14
-  name: 鍛冶屋 
-  text: ＋３カードを引く
-  cost: 4 
-  type1: 1 
-  type2:
-
-15:
-  card_id: st15
-  name: 密偵 
-  text: ＋１カードを引く/n＋１アクション/n各プレイヤー（あなたも含む）は、自分の山札の一番上のカードを公開し、そのカードを捨て札にするかそのまま戻すかをあなたが選ぶ。 
-  cost: 4 
-  type1: 1 
-  type2:
-
-16:
-  card_id: st16
-  name: 泥棒
-  text: 他のプレイヤーは全員、自分の山札の上から２枚のカードを公開する。/n財宝カードを公開した場合、その中の１枚をあなたが選んで廃棄する。/nあなたはここで廃棄したカードのうち好きな枚数を獲得できる。/n他の公開したカードはすべて捨て札にする。
-  cost: 4 
-  type1: 1
-  type2:
-
-17:
-  card_id: st17
-  name: 玉座の間
-  text: あなたの手札のアクションカード１枚を選ぶ。/nそのカードを２回使用する。
-  cost: 4 
-  type1: 1
-  type2:
-
-18:
-  card_id: st18
-  name: 議事堂
-  text: ＋４カードを引く/n＋１カードを購入/n他のプレイヤー全員は、カードを１枚引く。
-  cost: 5 
-  type1: 1
-  type2:
-
-19:
-  card_id: st19
-  name: 祝祭
-  text: ＋２アクション/n＋１カードを購入/n＋２コイン
-  cost: 5 
-  type1: 1
-  type2:
-
-20:
-  card_id: st20
-  name: 研究所
-  text: ＋２カードを引く/n＋１アクション
-  cost: 5 
-  type1: 1
-  type2:
-
-21:
-  card_id: st21
-  name: 書庫
-  text: あなたの手札が７枚になるまでカードを引く。/nこの方法で引いたアクションカードを脇に置いてもよい。（７枚には数えない。）脇に置いたカードは、このアクションの後、捨て札にする。
-  cost: 5 
-  type1: 1
-  type2:
-
-22:
-  card_id: st22
-  name: 市場
-  text: ＋１カードを引く/n＋１アクション/n＋１カードを購入/n＋１コイン
-  cost: 5 
-  type1: 1 
-  type2:
-
-23:
-  card_id: st23
-  name: 鉱山
-  text: あなたの手札の財宝カード１枚を廃棄する。/n廃棄した財宝よりもコストが最大３コイン多い財宝カード１枚を獲得し、あなたの手札に加える。
-  cost: 5 
-  type1: 1
-  type2:
-
-24:
-  card_id: st24
-  name: 魔女
-  text: ＋２カードを引く/n他のプレイヤーは全員、呪いカードを１枚ずつ獲得する。
-  cost: 5 
-  type1: 1
-  type2:
-
-25:
-  card_id: st25
-  name: 冒険者
-  text: あなたの山札から財宝カード２枚が公開されるまで、カードを公開する。/n公開した財宝カード２枚を手札に加え、他の公開したカードは捨て札に置く。/n※「坑道」の訳注にはないが、「冒険者」「公使」「義賊」「公爵夫人」のカードテキストにある「捨て札に置く」も「捨て札にする」と読み替える。これらのカードテキストの能力で「坑道」が捨て札にされたとき、リアクションの能力を使用できる。
-  cost: 6 
-  type1: 1
-  type2:
-
-26:
-  card_id: in01
-  name: 中庭
-  text: ＋３カードを引く/nあなたの手札からカード１枚を選び、あなたの山札の一番上に置く。
-  cost: 2 
-  type1: 1
-  type2:
-
-27:
-  card_id: in02
-  name: 手先
-  text: 次のうち２つを選ぶ：/n「＋１カードを引く」；「＋１アクション」；「＋１カードを購入」；「＋１コイン」/n（異なるものを２つ選ばなければならない。）
-  cost: 2 
-  type1: 1
-  type2:
-
-28:
-  card_id: in03
-  name: 秘密の部屋
-  text: 好きな枚数のカードを捨て札にする。/n捨て札にしたカード１枚につき＋１コイン/n他のプレイヤーがアタックカードを使用した時、手札からこのカードを公開できる。そうした場合、＋２カードを引く。/nその後あなたの手札からカード２枚を選び、あなたの山札の上に置く。
-  cost: 2 
-  type1: 1
-  type2:
-
-29:
-  card_id: in04
-  name: 大広間
-  text: ＋１カードを引く/n＋１アクション/n１勝利点
-  cost: 3 
-  type1: 1 
-  type2: 3
-
-30:
-  card_id: in05
-  name: 仮面舞踏会
-  text: ＋２カードを引く/n各プレイヤーは、自分の手札のカード１枚を選び、左隣のプレイヤーに同時に渡す。その後、あなたは自分の手札のカード１枚を廃棄してもよい。
-  cost: 3 
-  type1: 1
-  type2:
-
-31:
-  card_id: in06
-  name: 貧民街
-  text: ＋２アクション/nあなたの手札を公開する。あなたの手札にアクションカードが１枚もない場合、＋２カードを引く。
-  cost: 3 
-  type1: 1 
-  type2:
-
-32:
-  card_id: in07
-  name: 執事
-  text: 次のうち１つを選ぶ：/n「＋２カードを引く」；「＋２コイン」；「あなたの手札から２枚のカードを廃棄する」
-  cost: 3 
-  type1: 1
-  type2:
-
-33:
-  card_id: in08
-  name: 詐欺師
-  text: ＋２コイン/n他のプレイヤーは全員、自分の山札の一番上のカードを廃棄し、廃棄したカードと同コストのあなたが選んだカード１枚を獲得する。
-  cost: 3 
-  type1: 1 
-  type2:
-
-34:
-  card_id: in09
-  name: 願いの井戸
-  text: ＋１カードを引く/n＋１アクション/nカード１枚を指定する。あなたの山札の一番上のカードを公開する。公開したカードが指定したカードの場合、それをあなたの手札に加える。
-  cost: 3 
-  type1: 1 
-  type2:
-
-35:
-  card_id: in10
-  name: 男爵
-  text: ＋１カードを購入/nあなたは、屋敷カード１枚を捨て札にしてもよい。そうした場合、＋４コイン/n捨て札にしなかった場合、屋敷カード１枚を獲得する。
-  cost: 4 
-  type1: 1 
-  type2:
-
-36:
-  card_id: in11
-  name: 橋
-  text: ＋１カードを購入/n＋１コイン/nこのターン、すべてのカード（プレイヤーの手札を含む）のコストは１コイン少なくなる。しかし０未満にはならない。
-  cost: 4 
-  type1: 1 
-  type2:
-
-37:
-  card_id: in12
-  name: 共謀者
-  text: ＋２コイン/nあなたがこのターンに（このカードも含めて）３枚以上のアクションを使用している場合：/n＋１カードを引く、＋１アクション
-  cost: 4 
-  type1: 1 
-  type2:
-
-38:
-  card_id: in13
-  name: 銅細工師
-  text: このターン銅貨は、追加の１コインを生み出す。
-  cost: 4 
-  type1: 1 
-  type2:
-
-39:
-  card_id: in14
-  name: 鉄工所
-  text: コスト最大４コインまでのカード１枚を獲得する。/n獲得したカードが…/nアクションカードの場合、＋１アクション/n財宝カードの場合、＋１コイン/n勝利点カードの場合、＋１カードを引く
-  cost: 4 
-  type1: 1 
-  type2:
-
-40:
-  card_id: in15
-  name: 鉱山の村
-  text: ＋１カードを引く/n＋２アクション/nあなたは、このカードを即座に廃棄してもよい。そうした場合、＋２コイン
-  cost: 4 
-  type1: 1 
-  type2:
-
-41:
-  card_id: in16
-  name: 偵察員
-  text: ＋１アクション/nあなたのデッキの上から４枚のカードを公開する。勝利点カードを公開した場合、あなたの手札に加える。/n残りのカードは好きな順番であなたの山札の上に置く。
-  cost: 4 
-  type1: 1 
-  type2:
-
-42:
-  card_id: in17
-  name: 公爵
-  text: あなたが所有する公領１枚につき、勝利点１になる。
-  cost: 5 
-  type1: 3 
-  type2:
-
-43:
-  card_id: in18
-  name: 寵臣
-  text: ＋１アクション/n次のうち１つを選ぶ：「＋２コイン」；「あなたは手札すべてを捨て札にし、＋４カードを引く。そして手札が５枚以上の他のプレイヤーは全員、自分の手札を捨て札にし、カードを４枚引く」
-  cost: 5 
-  type1: 1 
-  type2:
-
-44:
-  card_id: in19
-  name: 破壊工作員
-  text: 他のプレイヤーは全員、自分の山札からコスト３コイン以上のカードが出るまで（上から順に）公開し、そのカードを廃棄する。そのプレイヤーは、サプライからそのカードよりもコストが２コイン以上少ないカード１枚を獲得してもよい。公開した残りのカードは各プレイヤーの捨て札に置く。
-  cost: 5 
-  type1: 1 
-  type2:
-
-45:
-  card_id: in20
-  name: 拷問人
-  text: ＋３カードを引く/n他のプレイヤーはそれぞれ、次のうち１つを選ぶ：「カード２枚を捨て札にする」；「呪いカード１枚を獲得し、自分の手札に加える」
-  cost: 5 
-  type1: 1 
-  type2:
-
-46:
-  card_id: in21
-  name: 交易場
-  text: あなたの手札からカード２枚を廃棄する。そうした場合、銀貨１枚を獲得し、あなたの手札に加える
-  cost: 5 
-  type1: 1 
-  type2:
-
-47:
-  card_id: in22
-  name: 貢物
-  text: あなたの左隣のプレイヤーは、自分の山札の上から２枚のカードを公開し、捨て札にする。あなたは、その２枚のカードのうち、異なる名前のカードごとに…/nアクションカードの場合：＋２アクション/n財宝カードの場合：＋２コイン/n勝利点カードの場合：＋２カードを引く/n（カード名が同一の場合、そのカードの種類のボーナス１つのみを得る。）
-  cost: 5 
-  type1: 1 
-  type2:
-
-48:
-  card_id: in23
-  name: 改良
-  text: ＋１カードを引く/n＋１アクション/nあなたの手札からカード１枚を廃棄する。廃棄したカードよりコストが１コイン多いカード１枚を獲得する。
-  cost: 5 
-  type1: 1 
-  type2:
-
-49:
-  card_id: in24
-  name: ハーレム
-  text: ２コイン/n２勝利点
-  cost: 6 
-  type1: 2 
-  type2: 3
-
-50:
-  card_id: in25
-  name: 貴族
-  text: 次のうち１つを選ぶ：「＋３カードを引く」；「＋２アクション」/n２勝利点
-  cost: 6 
-  type1: 1 
-  type2: 3
-
-51:
-  card_id: co01 
-  name: 銅貨
-  text: １コイン
-  cost: 0
-  type1: 2 
-  type2:
-
-52:
+﻿cards1:
+  id: 2
   card_id: co02
   name: 銀貨
   text: ２コイン
-  cost: 3 
-  type1: 2 
-  type2:
+  cost: 3
+  type1: '2'
+  type2: 
+  image_name: Silver.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
 
-53:
+cards2:
+  id: 3
   card_id: co03
   name: 金貨
   text: ３コイン
-  cost: 6 
-  type1: 2 
-  type2:
+  cost: 6
+  type1: '2'
+  type2: 
+  image_name: Gold.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
 
-54:
+
+cards3:
+  id: 4
   card_id: co04
   name: 屋敷
   text: １勝利点
-  cost: 2 
-  type1: 3 
-  type2:
+  cost: 2
+  type1: '3'
+  type2: 
+  image_name: Estate.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
 
-55:
+
+cards4:
+  id: 5
   card_id: co05
   name: 公領
   text: ３勝利点
-  cost: 5 
-  type1: 3
-  type2:
+  cost: 5
+  type1: '3'
+  type2: 
+  image_name: Duchy.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
 
-56:
+
+cards5:
+  id: 6
   card_id: co06
   name: 属州
   text: ６勝利点
-  cost: 8 
-  type1: 3 
-  type2:
+  cost: 8
+  type1: '3'
+  type2: 
+  image_name: Province.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
 
-57:
+
+cards6:
+  id: 7
   card_id: co07
   name: 呪い
   text: －１勝利点
-  cost: 0 
-  type1: 4 
-  type2:
+  cost: 0
+  type1: '4'
+  type2: 
+  image_name: Curse.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
+
+
+cards7:
+  id: 8
+  card_id: st01
+  name: 地下貯蔵庫
+  text: "＋１アクション\r\n手札から好きな枚数のカードを捨て札にする。\r\n捨て札１枚につき、カードを１枚引く。"
+  cost: 2
+  type1: '1'
+  type2: ''
+  image_name: Cellar.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:38:32.448025'
+
+
+cards8:
+  id: 9
+  card_id: st02
+  name: 礼拝堂
+  text: あなたの手札から最大４枚までのカードを、廃棄する。
+  cost: 2
+  type1: '1'
+  type2: ''
+  image_name: Chapel.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:40:10.595831'
+
+
+cards9:
+  id: 10
+  card_id: st03
+  name: 堀
+  text: "＋２カードを引く\r\n他のプレイヤーがアタックカードを使用した時、手札からこのカードを公開できる。\r\nそうした場合、あなたはそのアタックカードの影響を受けない。"
+  cost: 2
+  type1: '1'
+  type2: ''
+  image_name: Moat.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:40:26.893747'
+
+
+cards10:
+  id: 11
+  card_id: st04
+  name: 宰相
+  text: "＋２コイン\r\nあなたの山札のカードすべてを、即座に捨て札に置くことができる。"
+  cost: 3
+  type1: '1'
+  type2: ''
+  image_name: Chancellor.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:40:39.414189'
+
+
+cards11:
+  id: 12
+  card_id: st05
+  name: 村
+  text: "＋１カードを引く\r\n＋２アクション"
+  cost: 3
+  type1: '1'
+  type2: ''
+  image_name: Village.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:44:54.854592'
+
+
+cards12:
+  id: 13
+  card_id: st06
+  name: 木こり
+  text: "＋１カードを購入\r\n＋２コイン"
+  cost: 3
+  type1: '1'
+  type2: ''
+  image_name: Woodcutter.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:45:11.447642'
+
+
+cards13:
+  id: 14
+  card_id: st07
+  name: 工房
+  text: コスト最大４コインまでのカード１枚を獲得する。
+  cost: 3
+  type1: '1'
+  type2: 
+  image_name: Workshop.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
+
+
+cards14:
+  id: 15
+  card_id: st08
+  name: 役人
+  text: "銀貨１枚を獲得し、あなたの山札の上に置く。\r\n他のプレイヤーは全員、自分の手札から勝利点カード１枚を公開し、自分の山札の上に置く。\r\n（手札に勝利点カードがない場合、手札を公開する。）"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name: Bureaucrat.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:45:26.593521'
+
+
+cards15:
+  id: 16
+  card_id: st09
+  name: 祝宴
+  text: "このカードを廃棄する。\r\nコスト５コイン以下のカード１枚を獲得する。"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name: Feast.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:46:05.513605'
+
+
+cards16:
+  id: 17
+  card_id: st10
+  name: 庭園
+  text: あなたの山札のカード１０枚（端数切り捨て）につき勝利点１を得る。
+  cost: 4
+  type1: '3'
+  type2: 
+  image_name: Gardens.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
+
+
+cards17:
+  id: 18
+  card_id: st11
+  name: 民兵
+  text: "＋２コイン\r\n他のプレイヤーは全員、自分の手札が３枚になるまで捨て札をする。"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name: Militia.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:46:18.213651'
+
+
+cards18:
+  id: 19
+  card_id: st12
+  name: 金貸し
+  text: "あなたの手札から銅貨１枚を廃棄する。\r\nそうした場合、＋３コインを使用できる。"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name: Moneylender.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:45:52.419039'
+
+
+cards19:
+  id: 20
+  card_id: st13
+  name: 改築
+  text: "あなたの手札のカード１枚を廃棄する。\r\n廃棄したカードよりコストが最大２コイン多いカード１枚を獲得する。"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name: Remodel.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:47:08.389256'
+
+
+cards20:
+  id: 21
+  card_id: st14
+  name: 鍛冶屋
+  text: ＋３カードを引く
+  cost: 4
+  type1: '1'
+  type2: 
+  image_name: Smithy.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
+
+
+cards21:
+  id: 22
+  card_id: st15
+  name: 密偵
+  text: "＋１カードを引く\r\n＋１アクション\r\n各プレイヤー（あなたも含む）は、自分の山札の一番上のカードを公開し、そのカードを捨て札にするかそのまま戻すかをあなたが選ぶ。"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name: Spy.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:47:24.370915'
+
+
+cards22:
+  id: 23
+  card_id: st16
+  name: 泥棒
+  text: "他のプレイヤーは全員、自分の山札の上から２枚のカードを公開する。\r\n財宝カードを公開した場合、その中の１枚をあなたが選んで廃棄する。\r\nあなたはここで廃棄したカードのうち好きな枚数を獲得できる。\r\n他の公開したカードはすべて捨て札にする。"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name: Thief.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:47:47.899388'
+
+
+cards23:
+  id: 24
+  card_id: st17
+  name: 玉座の間
+  text: "あなたの手札のアクションカード１枚を選ぶ。\r\nそのカードを２回使用する。"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name: ThroneRoom.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:48:06.178081'
+
+
+cards24:
+  id: 25
+  card_id: st18
+  name: 議事堂
+  text: "＋４カードを引く\r\n＋１カードを購入\r\n他のプレイヤー全員は、カードを１枚引く。"
+  cost: 5
+  type1: '1'
+  type2: ''
+  image_name: CouncilRoom.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:51:29.194718'
+
+
+cards25:
+  id: 26
+  card_id: st19
+  name: 祝祭
+  text: "＋２アクション\r\n＋１カードを購入\r\n＋２コイン"
+  cost: 5
+  type1: '1'
+  type2: ''
+  image_name: Festival.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:52:01.604464'
+
+
+cards26:
+  id: 27
+  card_id: st20
+  name: 研究所
+  text: "＋２カードを引く\r\n＋１アクション"
+  cost: 5
+  type1: '1'
+  type2: ''
+  image_name: Laboratory.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:52:17.374346'
+
+
+cards27:
+  id: 28
+  card_id: st21
+  name: 書庫
+  text: "あなたの手札が７枚になるまでカードを引く。\r\nこの方法で引いたアクションカードを脇に置いてもよい。（７枚には数えない。）脇に置いたカードは、このアクションの後、捨て札にする。"
+  cost: 5
+  type1: '1'
+  type2: ''
+  image_name: Library.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:52:41.855769'
+
+
+cards28:
+  id: 29
+  card_id: st22
+  name: 市場
+  text: "＋１カードを引く\r\n＋１アクション\r\n＋１カードを購入\r\n＋１コイン"
+  cost: 5
+  type1: '1'
+  type2: ''
+  image_name: Market.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:53:09.569116'
+
+
+cards29:
+  id: 30
+  card_id: st23
+  name: 鉱山
+  text: "あなたの手札の財宝カード１枚を廃棄する。\r\n廃棄した財宝よりもコストが最大３コイン多い財宝カード１枚を獲得し、あなたの手札に加える。"
+  cost: 5
+  type1: '1'
+  type2: ''
+  image_name: Mine.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:53:47.313966'
+
+
+cards30:
+  id: 31
+  card_id: st24
+  name: 魔女
+  text: "＋２カードを引く\r\n他のプレイヤーは全員、呪いカードを１枚ずつ獲得する。"
+  cost: 5
+  type1: '1'
+  type2: ''
+  image_name: Witch.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:46:51.291321'
+
+
+cards31:
+  id: 32
+  card_id: st25
+  name: 冒険者
+  text: "あなたの山札から財宝カード２枚が公開されるまで、カードを公開する。\r\n公開した財宝カード２枚を手札に加え、他の公開したカードは捨て札に置く。\r\n※「坑道」の訳注にはないが、「冒険者」「公使」「義賊」「公爵夫人」のカードテキストにある「捨て札に置く」も「捨て札にする」と読み替える。これらのカードテキストの能力で「坑道」が捨て札にされたとき、リアクションの能力を使用できる。"
+  cost: 6
+  type1: '1'
+  type2: ''
+  image_name: Adventurer.jpg
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:53:30.687088'
+
+
+cards32:
+  id: 33
+  card_id: in01
+  name: 中庭
+  text: "＋３カードを引く\r\nあなたの手札からカード１枚を選び、あなたの山札の一番上に置く。"
+  cost: 2
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:56:14.107973'
+
+
+cards33:
+  id: 34
+  card_id: in02
+  name: 手先
+  text: "次のうち２つを選ぶ：\r\n「＋１カードを引く」；「＋１アクション」；「＋１カードを購入」；「＋１コイン」\r\n（異なるものを２つ選ばなければならない。）"
+  cost: 2
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:56:37.450852'
+
+
+cards34:
+  id: 35
+  card_id: in03
+  name: 秘密の部屋
+  text: "好きな枚数のカードを捨て札にする。\r\n捨て札にしたカード１枚につき＋１コイン\r\n他のプレイヤーがアタックカードを使用した時、手札からこのカードを公開できる。そうした場合、＋２カードを引く。\r\nその後あなたの手札からカード２枚を選び、あなたの山札の上に置く。"
+  cost: 2
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:56:59.706659'
+
+
+cards35:
+  id: 36
+  card_id: in04
+  name: 大広間
+  text: "＋１カードを引く\r\n＋１アクション\r\n１勝利点"
+  cost: 3
+  type1: '1'
+  type2: '3'
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:57:21.656456'
+
+
+cards36:
+  id: 37
+  card_id: in05
+  name: 仮面舞踏会
+  text: "＋２カードを引く\r\n各プレイヤーは、自分の手札のカード１枚を選び、左隣のプレイヤーに同時に渡す。その後、あなたは自分の手札のカード１枚を廃棄してもよい。"
+  cost: 3
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:58:20.176704'
+
+
+cards37:
+  id: 38
+  card_id: in06
+  name: 貧民街
+  text: "＋２アクション\r\nあなたの手札を公開する。あなたの手札にアクションカードが１枚もない場合、＋２カードを引く。"
+  cost: 3
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:57:57.251172'
+
+
+cards38:
+  id: 39
+  card_id: in07
+  name: 執事
+  text: "次のうち１つを選ぶ：\r\n「＋２カードを引く」；「＋２コイン」；「あなたの手札から２枚のカードを廃棄する」"
+  cost: 3
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:57:38.603795'
+
+
+cards39:
+  id: 40
+  card_id: in08
+  name: 詐欺師
+  text: "＋２コイン\r\n他のプレイヤーは全員、自分の山札の一番上のカードを廃棄し、廃棄したカードと同コストのあなたが選んだカード１枚を獲得する。"
+  cost: 3
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:55:56.662809'
+
+
+cards40:
+  id: 41
+  card_id: in09
+  name: 願いの井戸
+  text: "＋１カードを引く\r\n＋１アクション\r\nカード１枚を指定する。あなたの山札の一番上のカードを公開する。公開したカードが指定したカードの場合、それをあなたの手札に加える。"
+  cost: 3
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:55:41.569647'
+
+
+cards41:
+  id: 42
+  card_id: in10
+  name: 男爵
+  text: "＋１カードを購入\r\nあなたは、屋敷カード１枚を捨て札にしてもよい。そうした場合、＋４コイン\r\n捨て札にしなかった場合、屋敷カード１枚を獲得する。"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:55:16.444458'
+
+
+cards42:
+  id: 43
+  card_id: in11
+  name: 橋
+  text: "＋１カードを購入\r\n＋１コイン\r\nこのターン、すべてのカード（プレイヤーの手札を含む）のコストは１コイン少なくなる。しかし０未満にはならない。"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:54:18.403343'
+
+
+cards43:
+  id: 44
+  card_id: in12
+  name: 共謀者
+  text: "＋２コイン\r\nあなたがこのターンに（このカードも含めて）３枚以上のアクションを使用している場合：\r\n＋１カードを引く、＋１アクション"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:46:37.567758'
+
+
+cards44:
+  id: 45
+  card_id: in13
+  name: 銅細工師
+  text: このターン銅貨は、追加の１コインを生み出す。
+  cost: 4
+  type1: '1'
+  type2: 
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
+
+
+cards45:
+  id: 46
+  card_id: in14
+  name: 鉄工所
+  text: "コスト最大４コインまでのカード１枚を獲得する。\r\n獲得したカードが…\r\nアクションカードの場合、＋１アクション\r\n財宝カードの場合、＋１コイン\r\n勝利点カードの場合、＋１カードを引く"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:44:06.449097'
+
+
+cards46:
+  id: 47
+  card_id: in15
+  name: 鉱山の村
+  text: "＋１カードを引く\r\n＋２アクション\r\nあなたは、このカードを即座に廃棄してもよい。そうした場合、＋２コイン"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:43:36.806305'
+
+
+cards47:
+  id: 48
+  card_id: in16
+  name: 偵察員
+  text: "＋１アクション\r\nあなたのデッキの上から４枚のカードを公開する。勝利点カードを公開した場合、あなたの手札に加える。\r\n残りのカードは好きな順番であなたの山札の上に置く。"
+  cost: 4
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:43:14.760645'
+
+
+cards48:
+  id: 49
+  card_id: in17
+  name: 公爵
+  text: あなたが所有する公領１枚につき、勝利点１になる。
+  cost: 5
+  type1: '3'
+  type2: 
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
+
+
+cards49:
+  id: 50
+  card_id: in18
+  name: 寵臣
+  text: ＋１アクション/n次のうち１つを選ぶ：「＋２コイン」；「あなたは手札すべてを捨て札にし、＋４カードを引く。そして手札が５枚以上の他のプレイヤーは全員、自分の手札を捨て札にし、カードを４枚引く」
+  cost: 5
+  type1: '1'
+  type2: 
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
+
+
+cards50:
+  id: 51
+  card_id: in19
+  name: 破壊工作員
+  text: 他のプレイヤーは全員、自分の山札からコスト３コイン以上のカードが出るまで（上から順に）公開し、そのカードを廃棄する。そのプレイヤーは、サプライからそのカードよりもコストが２コイン以上少ないカード１枚を獲得してもよい。公開した残りのカードは各プレイヤーの捨て札に置く。
+  cost: 5
+  type1: '1'
+  type2: 
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
+
+
+cards51:
+  id: 52
+  card_id: in20
+  name: 拷問人
+  text: "＋３カードを引く\r\n他のプレイヤーはそれぞれ、次のうち１つを選ぶ：「カード２枚を捨て札にする」；「呪いカード１枚を獲得し、自分の手札に加える」"
+  cost: 5
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:42:40.293308'
+
+
+cards52:
+  id: 53
+  card_id: in21
+  name: 交易場
+  text: あなたの手札からカード２枚を廃棄する。そうした場合、銀貨１枚を獲得し、あなたの手札に加える
+  cost: 5
+  type1: '1'
+  type2: 
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:37:43'
+
+
+cards53:
+  id: 54
+  card_id: in22
+  name: 貢物
+  text: "あなたの左隣のプレイヤーは、自分の山札の上から２枚のカードを公開し、捨て札にする。あなたは、その２枚のカードのうち、異なる名前のカードごとに…\r\nアクションカードの場合：＋２アクション\r\n財宝カードの場合：＋２コイン\r\n勝利点カードの場合：＋２カードを引く\r\n（カード名が同一の場合、そのカードの種類のボーナス１つのみを得る。）"
+  cost: 5
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:42:12.111503'
+
+
+cards54:
+  id: 55
+  card_id: in23
+  name: 改良
+  text: "＋１カードを引く\r\n＋１アクション\r\nあなたの手札からカード１枚を廃棄する。廃棄したカードよりコストが１コイン多いカード１枚を獲得する。"
+  cost: 5
+  type1: '1'
+  type2: ''
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:41:39.522030'
+
+
+cards55:
+  id: 56
+  card_id: in24
+  name: ハーレム
+  text: "２コイン\r\n２勝利点"
+  cost: 6
+  type1: '2'
+  type2: '3'
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:41:21.685918'
+
+
+cards56:
+  id: 57
+  card_id: in25
+  name: 貴族
+  text: "次のうち１つを選ぶ：「＋３カードを引く」；「＋２アクション」\r\n２勝利点"
+  cost: 6
+  type1: '1'
+  type2: '3'
+  image_name:
+  created_at: '2014-10-25 02:37:43'
+  updated_at: '2014-10-25 02:41:03.064609'
+
